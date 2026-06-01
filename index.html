@@ -186,7 +186,7 @@
     {"year":"2022 · Research","title":"Behavioral Nudges in Mobile Onboarding Funnels","summary":"An A/B-tested framework for reducing first-session drop-off using choice architecture and progress signalling.","tags":["Product","Behavioral","UX"],"link":""}
   ],
   "projects":[
-    {"year":"Capstone 2024","title":"Conjoint Analysis","role":"Product &amp; Strategy Lead","summary":"This example will show you to analyze how consumers make tradeoffs among different attributes of a new product.","impact":"Conjoint Analysis","tags":["GTM","Marketing","D2C"],"link":"product-analytics-conjoint-analysis.pdf","excel":"conjoint_analysis.xlsx"},
+    {"year":"Capstone 2024","title":"Conjoint Analysis","role":"Product &amp; Strategy Lead","summary":"This example will show you to analyze how consumers make tradeoffs among different attributes of a new product.","impact":"Conjoint Analysis","tags":["GTM","Marketing","D2C"],"link":"product-analytics-conjoint-analysis.pdf","excel":"Conjoint_Analysis.xlsx"},
     {"year":"Capstone 2023","title":"Product-Market Fit Diagnostic for a B2B Analytics Startup","role":"Researcher","summary":"Built a PMF scoring model from 40 customer interviews and usage data to prioritise the next two quarters of roadmap.","impact":"Reframed the roadmap around <b>2 high-retention</b> segments, deprioritising 6 low-fit features.","tags":["Product","Research","B2B"],"link":"","excel":""},
     {"year":"Capstone 2023","title":"Unit Economics Dashboard &amp; Pricing Revamp","role":"Finance &amp; Product","summary":"Designed a contribution-margin model and interactive dashboard that exposed the true profitability of each customer cohort.","impact":"Identified <b>18%</b> of revenue running at negative margin; proposed a tiered fix.","tags":["Finance","Analytics","Pricing"],"link":"","excel":""}
   ],
@@ -394,8 +394,8 @@ function renderProjects(){
       <div class="impact" data-edit="projects.${i}.impact">${p.impact}</div>
       <div class="tags">${(p.tags||[]).map(t=>`<span class="t">${t}</span>`).join('')}</div>
       <div class="links">
-        ${p.link?`<a class="link" href="${p.link}" target="_blank">View project <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>`:`<span class="link ph">Project link — add in edit mode</span>`}
-        ${p.excel?`<a class="link" href="${p.excel}" target="_blank">Open spreadsheet <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></a>`:`<span class="link ph">Excel file — add in edit mode</span>`}
+        ${p.link?`<a class="link" href="${p.link}" target="_blank">Problem statement <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>`:`<span class="link ph">Project link — add in edit mode</span>`}
+        ${p.excel?`<a class="link" href="${p.excel}" target="_blank">View Project <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></a>`:`<span class="link ph">Excel file — add in edit mode</span>`}
       </div>
     </article>`).join('');
 }
